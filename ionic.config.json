@@ -1,0 +1,8 @@
+{
+  "name": "FPI-E-repo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "8a40deda"
+}
