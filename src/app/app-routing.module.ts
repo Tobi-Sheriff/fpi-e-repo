@@ -14,7 +14,27 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'year',
+    loadChildren: () => import('./year/year.module').then( m => m.YearPageModule)
   },
+  {
+    path: 'year1',
+    loadChildren: () => import('./year1/year1.module').then( m => m.Year1PageModule)
+  },
+  {
+    path: 'year2',
+    loadChildren: () => import('./year2/year2.module').then( m => m.Year2PageModule)
+  },
+  {
+    path: 'year3',
+    loadChildren: () => import('./year3/year3.module').then( m => m.Year3PageModule)
+  },
+  {
+    path: 'year4',
+    loadChildren: () => import('./year4/year4.module').then( m => m.Year4PageModule)
+  },
+
 ];
 
 @NgModule({
