@@ -1,9 +1,6 @@
 export interface Department {
-  id: string;
-  albumName: string;
-  artistName: string;
-  songDescription: string;
-  sonName: string;
+  id: number;
+  departmentName: string;
 }
 
 

@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DataService, Message } from '../services/data.service';
+// import { FirestoreService } from '../services/department/firestore.service';
+import { Observable } from 'rxjs';
+import { Department } from '../models/app.interface';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +10,14 @@ import { DataService, Message } from '../services/data.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  constructor(private data: DataService) {}
+
+  public departmentList: Observable<Department[]>;
+  // readonly departmentList$ = this.firestoreService.getDepartmentList();
+
+  constructor(
+    // private firestoreService: FirestoreService,
+    private data: DataService
+  ) { }
 
   refresh(ev) {
     setTimeout(() => {
@@ -17,6 +27,10 @@ export class HomePage {
 
   getMessages(): Message[] {
     return this.data.getMessages();
+  }
+
+  ngOnInit() {
+    // this.departmentList = this.firestoreService.getDepartmentList();
   }
 
 }

@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>create-department</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="createDepartmentForm" (submit)="createDepartment()">
+    <ion-item class="ion-margin-bottom">
+      <ion-label stacked>Department Name</ion-label>
+      <ion-input formControlName="departmentName" type="text" placeholder="Enter Department name"> </ion-input>
+    </ion-item>
+
+    <ion-button expand="block" type="submit" [disabled]="!createDepartmentForm.valid"> Add Depaartment </ion-button>
+  </form>
+
+</ion-content>

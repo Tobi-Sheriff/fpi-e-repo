@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "exam-repo": {
+      "hosting": {
+        "app": [
+          "exam-repo"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "exam-repo"
+  }
+}

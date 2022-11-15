@@ -5,6 +5,34 @@
 </ion-header>
 
 <ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Uploaded Files Collection
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card *ngFor="let img of filesCS | async">
+      <ion-card-header>
+        <ion-card-title>
+          {{ img.name }}
+        </ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <img [src]="img.filepath" />
+        <a [href]="img.filepath" rel="nofollow" target="_blank">Download</a>
+      </ion-card-content>
+
+      <!-- <ion-button expand="block" (click)="delete(img.filepath)"> delete image </ion-button> -->
+      <!-- <ion-button expand="block" (click)="deleteSong(song.id, song.songName)"> DELETE SONG </ion-button> -->
+
+    </ion-card>
+
+  </ion-card>
+
+
+
   <ion-card color="primary">
     <ion-card-header>
       <ion-card-title>Card Title</ion-card-title>

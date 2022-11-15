@@ -1,18 +1,36 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Inbox
-    </ion-title>
+    <ion-title>Song List</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/create">
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
-    <ion-refresher-content></ion-refresher-content>
-  </ion-refresher>
+
+<!-- <ion-content class="padding">
+  <ion-item *ngFor="let song of songList | async" routerLink="/detail/{{song.id}}">
+    <ion-label>
+      <h2>{{ song.songName}}</h2>
+      <p>Artist Name: {{ song.artistName }}</p>
+    </ion-label>
+  </ion-item>
+</ion-content> -->
+
+
+<ion-content>
+  <!-- <ion-item *ngFor="let department of departmentList | async">
+    <ion-label>
+      <h2>{{ department.departmentName}}</h2>
+    </ion-label>
+  </ion-item> -->
 
   <ion-card>
-    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+    <!-- <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" /> -->
+    <img alt="Silhouette of mountains" src="https://firebasestorage.googleapis.com/v0/b/exam-repo.appspot.com/o/Peter_Rabbit.jpg?alt=media&token=d8a59f7a-aeeb-4f11-bb13-c15b350dc64c
+    " />
     <ion-card-header>
       <ion-card-title>COMPUTER SCIENCE</ion-card-title>
       <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
@@ -22,10 +40,10 @@
       Here's a small text description for the card content. Nothing more, nothing less.
     </ion-card-content>
 
-    <ion-button fill="clear" routerLink="/year1">ND 1</ion-button>
-    <ion-button fill="clear" routerLink="/year2">ND 2</ion-button>
-    <ion-button fill="clear" routerLink="/year3">HND 1</ion-button>
-    <ion-button fill="clear" routerLink="/year4">HND 2</ion-button>
+    <ion-button fill="clear" routerLink="/u-cs-nd1">ND 1</ion-button>
+    <ion-button fill="clear" routerLink="/u-cs-nd2">ND 2</ion-button>
+    <ion-button fill="clear" routerLink="/u-cs-hnd1">HND 1</ion-button>
+    <ion-button fill="clear" routerLink="/u-cs-hnd2">HND 2</ion-button>
   </ion-card>
 
   <ion-card>
@@ -39,10 +57,10 @@
       Here's a small text description for the card content. Nothing more, nothing less.
     </ion-card-content>
 
-    <ion-button fill="clear" routerLink="/year1">ND 1</ion-button>
-    <ion-button fill="clear" routerLink="/year2">ND 2</ion-button>
-    <ion-button fill="clear" routerLink="/year3">HND 1</ion-button>
-    <ion-button fill="clear" routerLink="/year4">HND 2</ion-button>
+    <ion-button fill="clear" routerLink="/u-slt-nd1">ND 1</ion-button>
+    <ion-button fill="clear" routerLink="/u-slt-nd2">ND 2</ion-button>
+    <ion-button fill="clear" routerLink="/u-slt-hnd1">HND 1</ion-button>
+    <ion-button fill="clear" routerLink="/u-slt-hnd2">HND 2</ion-button>
   </ion-card>
 
   <ion-card>
@@ -56,10 +74,10 @@
       Here's a small text description for the card content. Nothing more, nothing less.
     </ion-card-content>
 
-    <ion-button fill="clear" routerLink="/year1">ND 1</ion-button>
-    <ion-button fill="clear" routerLink="/year2">ND 2</ion-button>
-    <ion-button fill="clear" routerLink="/year3">HND 1</ion-button>
-    <ion-button fill="clear" routerLink="/year4">HND 2</ion-button>
+    <ion-button fill="clear" routerLink="/u-ft-nd1">ND 1</ion-button>
+    <ion-button fill="clear" routerLink="/u-ft-nd2">ND 2</ion-button>
+    <ion-button fill="clear" routerLink="/u-ft-hnd1">HND 1</ion-button>
+    <ion-button fill="clear" routerLink="/u-ft-hnd2">HND 2</ion-button>
   </ion-card>
 
   <ion-header collapse="condense">
