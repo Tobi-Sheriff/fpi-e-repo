@@ -4,19 +4,8 @@
   </ion-toolbar>
 </ion-header>
 
-<!-- <ion-header>
-  <ion-toolbar>
-    <ion-segment value="first">
-      <ion-segment-button value="first"> 1st Semester </ion-segment-button>
-      <ion-segment-button value="second"> 2nd Semester </ion-segment-button>
-    </ion-segment>
-  </ion-toolbar>
-</ion-header> -->
-
 
 <ion-content>
-  <ion-toggle></ion-toggle>
-  <ion-toggle [checked]="true"></ion-toggle>
   <ion-button expand="block" (click)="toggleDepartment(value = true)"> First semester </ion-button>
   <ion-button expand="block" (click)="toggleDepartment(value = false)"> Second semester </ion-button>
 

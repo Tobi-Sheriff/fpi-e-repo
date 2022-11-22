@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/home">Home</ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/u-cs-hnd2-ss">View 2nd Semester</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-button (click)="toggleDepartment(value = 2020)"> 2020 </ion-button> -->
+  <ion-button (click)="value = 2020"> 2020 </ion-button>
+  <ion-button (click)="value = 2021"> 2021 </ion-button>
+  <ion-button (click)="value = 2022"> 2022 </ion-button>
+
+  <ion-card-header>
+    <ion-card-title><b>HCS2</b></ion-card-title>
+    <ion-card-title>First Semester</ion-card-title>
+  </ion-card-header>
+
+  <div *ngIf="value == 2020">
+    <ion-card *ngFor="let img of files2020 | async">
+      <ion-card-content>
+        <img [src]="img.filepath" />
+        <a [href]="img.filepath" rel="nofollow" target="_blank">Download</a>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div *ngIf="value == 2021">
+    <ion-card *ngFor="let img of files2021 | async">
+      <ion-card-content>
+        <img [src]="img.filepath" />
+        <a [href]="img.filepath" rel="nofollow" target="_blank">Download</a>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div *ngIf="value == 2022">
+    <ion-card *ngFor="let img of files2022 | async">
+      <ion-card-content>
+        <img [src]="img.filepath" />
+        <a [href]="img.filepath" rel="nofollow" target="_blank">Download</a>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>
