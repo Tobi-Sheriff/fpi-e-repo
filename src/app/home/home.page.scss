@@ -3,3 +3,17 @@ ion-card-header.ios {
   display: flex;
   flex-flow: column-reverse;
 }
+
+ion-toolbar {
+  --background: #CC9933 ;
+  --color: #fff;
+}
+
+ion-button {
+  --background: #009631;
+  --color: #fff;
+}
+
+ion-card-title {
+  --color: #009631;
+}

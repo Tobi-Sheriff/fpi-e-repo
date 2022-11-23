@@ -188,59 +188,59 @@ const routes: Routes = [
     loadChildren: () => import('./pages/u-cs/nd1-fs/nd1-fs.module').then( m => m.Nd1FsPageModule)
   },
   {
-    path: 'nd1-fs',
+    path: 'u-ft-nd1-fs',
     loadChildren: () => import('./pages/u-ft/nd1-fs/nd1-fs.module').then( m => m.Nd1FsPageModule)
   },
   {
-    path: 'nd1-ss',
+    path: 'u-ft-nd1-ss',
     loadChildren: () => import('./pages/u-ft/nd1-ss/nd1-ss.module').then( m => m.Nd1SsPageModule)
   },
   {
-    path: 'nd2-fs',
+    path: 'u-ft-nd2-fs',
     loadChildren: () => import('./pages/u-ft/nd2-fs/nd2-fs.module').then( m => m.Nd2FsPageModule)
   },
   {
-    path: 'nd2-ss',
+    path: 'u-ft-nd2-ss',
     loadChildren: () => import('./pages/u-ft/nd2-ss/nd2-ss.module').then( m => m.Nd2SsPageModule)
   },
   {
-    path: 'hnd1-fs',
+    path: 'u-ft-hnd1-fs',
     loadChildren: () => import('./pages/u-ft/hnd1-fs/hnd1-fs.module').then( m => m.Hnd1FsPageModule)
   },
   {
-    path: 'hnd1-ss',
+    path: 'u-ft-hnd1-ss',
     loadChildren: () => import('./pages/u-ft/hnd1-ss/hnd1-ss.module').then( m => m.Hnd1SsPageModule)
   },
   {
-    path: 'hnd2-fs',
+    path: 'u-ft-hnd2-fs',
     loadChildren: () => import('./pages/u-ft/hnd2-fs/hnd2-fs.module').then( m => m.Hnd2FsPageModule)
   },
   {
-    path: 'hnd2-ss',
+    path: 'u-ft-hnd2-ss',
     loadChildren: () => import('./pages/u-ft/hnd2-ss/hnd2-ss.module').then( m => m.Hnd2SsPageModule)
   },
   {
-    path: 'nd1-fs',
+    path: 'u-slt-nd1-fs',
     loadChildren: () => import('./pages/u-slt/nd1-fs/nd1-fs.module').then( m => m.Nd1FsPageModule)
   },
   {
-    path: 'nd1-ss',
+    path: 'u-slt-nd1-ss',
     loadChildren: () => import('./pages/u-slt/nd1-ss/nd1-ss.module').then( m => m.Nd1SsPageModule)
   },
   {
-    path: 'nd2-fs',
+    path: 'u-slt-nd2-fs',
     loadChildren: () => import('./pages/u-slt/nd2-fs/nd2-fs.module').then( m => m.Nd2FsPageModule)
   },
   {
-    path: 'nd2-ss',
+    path: 'u-slt-nd2-ss',
     loadChildren: () => import('./pages/u-slt/nd2-ss/nd2-ss.module').then( m => m.Nd2SsPageModule)
   },
   {
-    path: 'hnd1-fs',
+    path: 'u-slt-hnd1-fs',
     loadChildren: () => import('./pages/u-slt/hnd1-fs/hnd1-fs.module').then( m => m.Hnd1FsPageModule)
   },
   {
-    path: 'hnd1-ss',
+    path: 'u-slt-hnd1-ss',
     loadChildren: () => import('./pages/u-slt/hnd1-ss/hnd1-ss.module').then( m => m.Hnd1SsPageModule)
   },
   {
