@@ -116,11 +116,11 @@ const routes: Routes = [
     loadChildren: () => import('./pages/cs/2020/hnd1-ss/hnd1-ss.module').then( m => m.Hnd1SsPageModule)
   },
   {
-    path: 'hnd1-ss',
+    path: 'cs-hnd1-ss-2021',
     loadChildren: () => import('./pages/cs/2021/hnd1-ss/hnd1-ss.module').then( m => m.Hnd1SsPageModule)
   },
   {
-    path: 'hnd1-fs',
+    path: 'cs-hnd1-fs-2021',
     loadChildren: () => import('./pages/cs/2021/hnd1-fs/hnd1-fs.module').then( m => m.Hnd1FsPageModule)
   },
   {

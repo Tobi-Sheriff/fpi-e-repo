@@ -80,4 +80,15 @@ export class AuthenticationPage implements OnInit {
     }
   }
 
+  async logout() {
+    try {
+      await this.auth.logout();
+      console.log('Log Out Successfuly');
+      this.router.navigateByUrl('login');
+    } catch (error) {
+      console.log('Error: ', error);
+    }
+  }
+
+
 }
